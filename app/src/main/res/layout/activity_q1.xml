@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".q1_Activity"
+    android:orientation="vertical"
+    android:padding="35dp"
+    android:theme="@android:style/Theme.Light"
+    android:background="@drawable/universe">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/venus"
+        android:background="@color/common_google_signin_btn_text_dark_focused"/>
+
+    <TextView
+        android:id="@+id/tvQ1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="Witch planet is this ?"
+        android:textColor="@color/colorAccent"
+        android:textSize="35dp"/>
+
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:id="@+id/RG">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Venus     "
+            android:textColor="@color/colorAccent"
+            android:id="@+id/Rb1"
+            android:textSize="30dp"
+
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mars  "
+            android:id="@+id/Rb2"
+            android:textSize="30dp"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            />
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Next"
+        android:textSize="25dp"
+        android:id="@+id/BtnNext"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimaryDark"
+
+        android:layout_marginTop="25dp"/>
+
+
+</LinearLayout>

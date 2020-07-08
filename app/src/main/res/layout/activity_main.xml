@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="35dp"
+    android:background="@color/common_google_signin_btn_text_dark_focused">
+
+    <ImageView
+        android:id="@+id/mainImg"
+        android:layout_width="match_parent"
+        android:layout_height="274dp"
+        android:src="@drawable/quiz"/>
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:singleLine="true"
+        android:hint="E-mail"
+        android:background="@drawable/common_google_signin_btn_text_light"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/common_google_signin_btn_text_light"/>
+
+
+    <Button
+        android:id="@+id/btnAuth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Log In"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/ToRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="To register click here !"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
